@@ -1,7 +1,7 @@
-﻿streamlit
-transformers
-torch
-pandas
-plotly
-openpyxl
-python-dotenv
+﻿streamlit==1.32.0
+transformers==4.38.0
+torch==2.6.0
+pandas==2.2.0
+plotly==5.19.0
+openpyxl==3.1.2
+python-dotenv==1.0.1
