@@ -22,7 +22,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────────────────
 # CUSTOM CSS — makes the app look cleaner
 # ─────────────────────────────────────────────────────────
-st.markdown("""
+st.markdown(""
     <style>
     .metric-card {
         background-color: #f0f2f6;
@@ -33,16 +33,19 @@ st.markdown("""
     .stDownloadButton button {
         width: 100%;
     }
+    body {
+        font-family: sans-serif;
+        color: green;
+    }
     </style>
-""", unsafe_allow_html=True)
+"", unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────────────────
 # HEADER
 # ─────────────────────────────────────────────────────────
 st.title("📊 NLP Sentiment Analysis Dashboard")
 st.markdown(
-    "Upload product reviews to analyze customer sentiment using "
-    "**BERT** (Bidirectional Encoder Representations from Transformers)"
+    "Upload product reviews to analyze customer sentiment using **BERT** (Bidirectional Encoder Representations from Transformers)"
 )
 st.divider()
 
@@ -67,9 +70,7 @@ with st.sidebar:
     st.divider()
     st.markdown("**About this app**")
     st.markdown(
-        "Built with HuggingFace Transformers, "
-        "Streamlit, and Plotly. "
-        "Model: `cardiffnlp/twitter-roberta-base-sentiment-latest`"
+        "Built with HuggingFace Transformers, Streamlit, and Plotly. Model: `cardiffnlp/twitter-roberta-base-sentiment-latest`"
     )
 
 # ─────────────────────────────────────────────────────────
