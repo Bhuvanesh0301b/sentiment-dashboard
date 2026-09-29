@@ -22,7 +22,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────────────────
 # CUSTOM CSS — makes the app look cleaner
 # ─────────────────────────────────────────────────────────
-st.markdown(""
+st.markdown("""
     <style>
     .metric-card {
         background-color: #f0f2f6;
@@ -38,7 +38,7 @@ st.markdown(""
         color: green;
     }
     </style>
-"", unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────────────────
 # HEADER
