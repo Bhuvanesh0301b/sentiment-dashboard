@@ -43,7 +43,7 @@ st.markdown("""
 # ─────────────────────────────────────────────────────────
 # HEADER
 # ─────────────────────────────────────────────────────────
-st.markdown("<h1 style='color:pink'>📊 NLP Sentiment Analysis Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color:yellow'>📊 NLP Sentiment Analysis Dashboard</h1>", unsafe_allow_html=True)
 st.markdown(
     "Upload product reviews to analyze customer sentiment using **BERT** (Bidirectional Encoder Representations from Transformers)"
 )
