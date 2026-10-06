@@ -33,6 +33,9 @@ st.markdown("""
     .stDownloadButton button {
         width: 100%;
     }
+    .stButton button, .stDownloadButton button {
+        background-color: yellow;
+    }
     body {
         font-family: sans-serif;
         color: green;
