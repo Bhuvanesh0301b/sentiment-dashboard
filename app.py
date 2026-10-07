@@ -39,6 +39,7 @@ st.markdown("""
     body {
         font-family: sans-serif;
         color: green;
+        background-color: yellow;
     }
     </style>
 """, unsafe_allow_html=True)
