@@ -312,6 +312,16 @@ if uploaded_file is not None:
         use_container_width=True
     )
 
+    # ─────────────────────────────────────────────────────
+    # BLUE DUMMY BUTTON
+    # ─────────────────────────────────────────────────────
+    st.markdown(
+        """
+        <button style='background-color:#0000FF;color:white;padding:0.5rem 1rem;border:none;border-radius:4px;'>Blue Dummy</button>
+        """,
+        unsafe_allow_html=True
+    )
+
 else:
     # Show instructions when no file is uploaded
     st.markdown("""
