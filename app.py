@@ -302,7 +302,7 @@ if uploaded_file is not None:
     # ─────────────────────────────────────────────────────
     st.subheader("⬇️ Download Results")
 
-    result_csv = df[[review_col, 'Sentiment', 'Confidence %']].to_csv(index=False)
+    result_csv = df[[review_col, 'Sentiment', 'Confidence %']].to_csv(index=False).encode('utf-8')
 
     st.download_button(
         label="Download Results as CSV",
