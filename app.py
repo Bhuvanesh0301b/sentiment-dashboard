@@ -49,7 +49,7 @@ st.markdown("""
 # ─────────────────────────────────────────────────────────
 col_title, col_button = st.columns([5, 1])
 with col_title:
-    st.markdown("<h1 style='color:red'>📊 NLP Sentiment Analysis Dashboard</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:orange'>📊 NLP Sentiment Analysis Dashboard</h1>", unsafe_allow_html=True)
 with col_button:
     st.button("Dummy", use_container_width=True)
 st.markdown(
