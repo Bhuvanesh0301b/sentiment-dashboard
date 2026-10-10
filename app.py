@@ -1,6 +1,6 @@
 # app.py
 # Main Streamlit application
-
+import io
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -109,7 +109,7 @@ with col_sample:
 
 # Load sample data if button clicked
 if use_sample:
-    uploaded_file = open("data/sample_reviews.csv", "rb")
+    uploaded_file = io.BytesIO(open("data/sample_reviews.csv", "rb").read())
     uploaded_file.name = "sample_reviews.csv"
     st.info("Using built-in sample dataset with 15 reviews.")
 
