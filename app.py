@@ -1,4 +1,14 @@
 # app.py
+"""Main Streamlit application for sentiment analysis.
+
+This script sets up a Streamlit dashboard that allows users to upload product review data,
+run BERT‑based sentiment analysis, and explore the results via metrics and interactive charts.
+
+A simple login page has been added at the start of the app. Users must enter the username
+and password (both set to "123") to access the dashboard. Successful authentication stores
+an ``authenticated`` flag in ``st.session_state`` and reloads the page.
+"""
+
 # Main Streamlit application
 import io
 import streamlit as st
@@ -18,6 +28,19 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Simple login handling
+if not st.session_state.get('authenticated', False):
+    st.title("Login")
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+    if st.button("Login"):
+        if username == "123" and password == "123":
+            st.session_state.authenticated = True
+            st.experimental_rerun()
+        else:
+            st.error("Invalid credentials")
+    st.stop()
 
 # ─────────────────────────────────────────────────────────
 # CUSTOM CSS — makes the app look cleaner
@@ -344,4 +367,3 @@ else:
     | Average, nothing special. |
     """)
     
-
