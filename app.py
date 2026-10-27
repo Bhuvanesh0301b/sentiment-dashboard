@@ -20,24 +20,6 @@ st.set_page_config(
 )
 
 # ─────────────────────────────────────────────────────────
-# SIMPLE LOGIN
-# ─────────────────────────────────────────────────────────
-if 'logged_in' not in st.session_state:
-    st.session_state.logged_in = False
-
-if not st.session_state.logged_in:
-    st.markdown("<h1 style='color:green'>Login</h1>", unsafe_allow_html=True)
-    user = st.text_input("Username")
-    pwd = st.text_input("Password", type="password")
-    if st.button("Log in"):
-        if user == "1234" and pwd == "1234567890":
-            st.session_state.logged_in = True
-            st.experimental_rerun()
-        else:
-            st.error("Invalid credentials")
-    st.stop()
-
-# ─────────────────────────────────────────────────────────
 # CUSTOM CSS — makes the app look cleaner
 # ─────────────────────────────────────────────────────────
 st.markdown("""
@@ -362,3 +344,4 @@ else:
     | Average, nothing special. |
     """)
     
+
