@@ -26,7 +26,7 @@ if 'logged_in' not in st.session_state:
     st.session_state.logged_in = False
 
 if not st.session_state.logged_in:
-    st.title("Login")
+    st.markdown("<h1 style='color:green'>Login</h1>", unsafe_allow_html=True)
     user = st.text_input("Username")
     pwd = st.text_input("Password", type="password")
     if st.button("Log in"):
