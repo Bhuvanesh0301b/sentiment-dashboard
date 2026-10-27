@@ -31,7 +31,8 @@ st.set_page_config(
 
 # Simple login handling
 if not st.session_state.get('authenticated', False):
-    st.title("Login")
+    # changed title to orange color
+    st.markdown("<h2 style='color:orange'>Login</h2>", unsafe_allow_html=True)
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
     if st.button("Login"):
@@ -367,3 +368,4 @@ else:
     | Average, nothing special. |
     """)
     
+
