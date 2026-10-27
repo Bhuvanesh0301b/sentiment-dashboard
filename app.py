@@ -57,7 +57,7 @@ st.markdown("""
     body {
         font-family: sans-serif;
         color: green;
-        background-color: yellow;
+        background-color: #22c55e;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -361,3 +361,4 @@ else:
     | Terrible quality, broke in a day. |
     | Average, nothing special. |
     """)
+    
