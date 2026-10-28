@@ -32,7 +32,7 @@ st.set_page_config(
 # Simple login handling
 if not st.session_state.get('authenticated', False):
     # changed title to orange color
-    st.markdown("<h2 style='color:orange'>Login</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:red'>Login</h2>", unsafe_allow_html=True)
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
     if st.button("Login"):
@@ -73,7 +73,7 @@ st.markdown("""
 # ─────────────────────────────────────────────────────────
 col_title, col_button = st.columns([5, 1])
 with col_title:
-    st.markdown("<h1 style='color:blue'>📊 NLP Sentiment Analysis Dashboard</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:red'>📊 NLP Sentiment Analysis Dashboard</h1>", unsafe_allow_html=True)
 with col_button:
     st.button("Dummy", use_container_width=True)
 st.markdown(
@@ -368,3 +368,4 @@ else:
     | Average, nothing special. |
     """)
     
+
